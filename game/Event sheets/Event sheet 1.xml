@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="607266667146377">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="325103933291537" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="851439137322236" type="Enemy1">
+                    <param id="0" name="Angle">angle(Enemy1.X, Enemy1.Y, Player.X, Player.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

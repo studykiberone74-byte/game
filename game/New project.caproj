@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2t03my6mr8df6</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="140239933752892">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\члт\Desktop\DGS\assets\земля.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="426447745171435">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="289292365580578">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\члт\Desktop\DGS\assets\земля.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="777885836416836">
+            <plugin id="TiledBg" />
+            <texture original-source="\\0-desktop-20hjb\общая папка\dgs\DGS\Спрайт-0001.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="239298491726504">
+            <plugin id="TiledBg" />
+            <texture original-source="\\0-desktop-20hjb\общая папка\dgs\DGS\assets\Небо.png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="339025522665460">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground6" sid="234230406426309">
+            <plugin id="TiledBg" />
+            <texture original-source="\\0-desktop-20hjb\общая папка\dgs\DGS\assets\облако1.png" />
+        </object-type>
+        <object-type name="Player" sid="685563949370428">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="174174969188485">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="681835010290203" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\0-desktop-20hjb\общая папка\dgs\DGS\персонаж 1.png">
+                        <collision-poly>
+                            <point x="0.46875" y="0.46875" />
+                            <point x="0.53125" y="0.46875" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.328125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground7" sid="246331825916683">
+            <plugin id="TiledBg" />
+            <texture original-source="\\0-desktop-20hjb\общая папка\dgs\DGS\Спрайт-0005.png" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="710366193593708">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\члт\Downloads\Спрайт-0001.png" />
+        </object-type>
+        <object-type name="Enemy1" sid="401780341371393">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="282396521078155">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="158728671071473" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\члт\Downloads\Спрайт-0010.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

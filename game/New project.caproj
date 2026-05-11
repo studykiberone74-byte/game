@@ -10,6 +10,7 @@
     <unique-id>2t03my6mr8df6</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
@@ -108,8 +109,11 @@
         <object-type name="Enemy1" sid="401780341371393">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Bullet" sid="282396521078155">
+                <behavior-type name="Bullet" sid="333827445298377">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="991999948498674">
+                    <behavior id="Platform" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -128,6 +132,35 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Player1" sid="291763538276197">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="949498938363437">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="620475757128925">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574171625540679" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\0-desktop-20hjb\общая папка\dgs\DGS\персонаж 1.png">
+                        <collision-poly>
+                            <point x="0.46875" y="0.46875" />
+                            <point x="0.53125" y="0.46875" />
+                            <point x="0.890625" y="0.5" />
+                            <point x="0.859375" y="0.859375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.328125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="458797640369614">
+            <plugin id="Keyboard" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -136,7 +169,9 @@
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
